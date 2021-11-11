@@ -206,3 +206,40 @@ padding: 8px sirve para que se cree un relleno (espacio alrededor del contenido 
     iframe {
         margin: 40px 35px;
     }
+
+    /*Lo siguiente es para la pagina de historia*/
+    /*Le puse una animación al titulo, le cambie la imagen de fondo y cambie el background*/
+#historia{
+    color: aliceblue;
+    font-size: 110 px;
+    font-family: "Montserrat", "sans-serif";
+  }
+  #title{
+    font-family: "Montserrat", "sans-serif";
+    animation-name: titulo;
+    animation-duration: 10s;
+    animation-delay: 2s;
+  }
+  @keyframes titulo{
+    0%{color:brown}
+    25%{color:bisque}
+    50%{color: aliceblue}
+    75%{color: silver}
+    100%{color: black}
+  }
+  
+  #pagHistoria{
+    width: 100%;
+    height: 300vh;
+    background-image: url(../img/Integrantes.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #history-content{
+    padding: 60px;
+    background-color: rgba(189, 185, 185, 0.301);
+    max-width: 400px;
+    margin: 60px auto;
+}
