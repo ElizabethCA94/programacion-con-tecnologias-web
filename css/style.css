@@ -243,3 +243,38 @@ padding: 8px sirve para que se cree un relleno (espacio alrededor del contenido 
     max-width: 400px;
     margin: 60px auto;
 }
+
+/*Estilos para la hoja de contacto */
+form{
+  width: 550px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+h2{
+color: rgba(0, 0, 0,);
+text-align: center;
+margin: 0;
+font-size: 30px;
+margin-bottom: 20px;
+}
+
+input, textarea {
+width: 100%;
+margin-bottom: 20px;
+padding: 7px;
+box-sizing: border-box;
+}
+
+.btn {
+background-image: -webkit-linear-gradient(top, #ffcc99, #ffff99);
+border: none;
+font-family: Fantasy;
+font-size: 15px;
+
+}
+
+
