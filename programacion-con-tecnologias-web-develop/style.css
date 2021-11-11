@@ -1,0 +1,193 @@
+/* Se importa de la api de google para colocar una */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
+
+/* A todos los elementos del HTML se le van a aplicar las siguientes propiedades:
+padding: 0 sirve para que no se cree un relleno (espacio alrededor del contenido de un elemento), dentro de los bordes definidos.
+margin: 0 se utilizan para que no se cree un margen (espacio alrededor de los elementos), fuera de los bordes definidos.
+text-decoration: none facilita que se le quite la decoracion que trae el texto por defecto, debido a que son enlaces
+list-style: none quita las viñetas de las listas desordenadas (ul)
+box-sizing: border-box le dice al navegador tomar en cuenta para cualquier valor que se especifique en el padding para el ancho o alto de un elemento. 
+
+*/
+* {
+padding:0; 
+margin: 0;
+text-decoration: none;
+list-style: none;
+box-sizing:border-box;
+}
+
+/* Todos los elementos dentro de la etiqueta body van a tener la fuente Montserrat */
+body {
+  font-family: "Montserrat";
+  background-image: url(fondo.jpg);
+ 
+
+}
+
+/* A la etiqueta header se le van a aplicar las siguientes propiedades:
+width: 100% es el ancho del elemento que ocupe el 100% de la pagina
+height: 100vh, es el alto del elemento, lo usamos en este caso porque queremos que la imagen de fondo ocupe todo el alto de la pantalla. Y tambien por la eitqueta nav, ya que queremos que menu varie de acuerdo a las medidas del dispositivo, al ser resposive
+background-image: url(fondo.jpg); se define como el fondo en imagen de la pagina, la cual por defecto trae un background-repeat
+*/
+header {
+  width: 100%;
+}
+
+/*A la etiqueta nav se le van a aplicar las siguientes propiedades:
+height: 100px, alto de la etiqueta, lo usamos en este caso para que la barra de mavegacion ocupe 100px de la pagina web 
+width: 100% ancho del contenido que ocupe el 100% de la pagina
+display: flex permite que el comportamiento de visualizacion del elemento sea flexible,en donde se puedan alterar sus dimensiones y llenar espacios disponibles
+justify-content: space-between permite que los elementos del contenedor tengan espacios entre ellos, especialmente apliado al momento de que sea resposnive
+align-items: center especifica la alineación centrada de los elementos dentro del contenedor flexible
+background: rgba(255, 248, 187, 0.74) define el color fondo de la barra de navegacion, en rgba, la cual, incluye la opacidad del color
+padding: 10 sirve para que se cree un relleno (espacio alrededor del contenido de un elemento), dentro de los bordes definidos
+*/
+nav{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 248, 187, 0.74);
+  padding: 10px;
+}
+
+/* width: 140px ancho del contenido que ocupe el 140px de la pagina 
+margin-left: 20px se utilizan para que se cree un margen (espacio alrededor de los elementos), fuera de los bordes definidos.
+*/
+.logo{
+  width: 140px;
+  margin-left: 80px;
+}
+
+/*Propiedades a aplicar para */
+.bar-btn{
+  font-size: 25px;
+  color:black;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.nav-menu{
+  position: fixed;
+  width: 100%;
+  height: 0vh;
+  top: 100px;
+  background: rgba(255, 248, 187, 0.74);
+  text-align: center;
+  transition: all .5s;
+}
+
+.nav-menu li {
+  display: none;
+  line-height: 30px;
+  margin: 50px 0;
+  transition: all .5s;
+}
+
+.nav-menu li a {
+  color:black;
+  font-size: 16px;
+  text-transform: upercase;
+  font-weight: 600;
+}
+
+#check{
+  display: none;
+}
+
+#check:checked ~ .nav-menu {
+  height: 100vh;
+}
+
+#check:checked ~ .nav-menu li{
+  display: block;
+}
+
+@media screen and (min-width: 768px){
+
+  .logo{
+    margin-left: 50px;
+  }
+
+  nav{
+    height: 100px;
+  }
+
+  .bar-btn{
+    display: none;
+  }
+
+  .nav-menu{
+    position: relative;
+    height: 100px;
+    top: 0;
+    background: none;
+    transition: none;
+    text-align: right;
+    margin-right:50px; 
+  }
+
+ .nav-menu li {
+   display: inline-block;
+   line-height: 100px;
+   margin: 0 20px;
+   transition: none;
+ }
+
+ .nav-menu li a {
+   font-size: 20px;
+ }
+}
+
+.main-content {
+  padding: 60px;
+  background-color: rgba(255, 255, 255, 0.74);
+  max-width: 600px;
+  margin: 60px auto;
+}
+
+h1, p{
+  margin: 30px auto;
+}
+
+@keyframes table-animation {
+  0% { box-shadow: 0 0 0px 0 red; }
+  50% { box-shadow: 0 0 40px 0 green; }
+  100% { box-shadow: 0 0 0px 0 blue; }
+}
+
+.songs-table{
+  margin-top: 60px;
+  background-color: white;
+  border-color: black;
+  border: 1px solid;
+  border-collapse: collapse;
+  animation: table-animation 1s infinite;
+  width: 100%;
+}
+
+.songs-table td, .songs-table th {
+  border: 1px solid;
+  padding: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
