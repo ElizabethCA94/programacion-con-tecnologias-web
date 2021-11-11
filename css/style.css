@@ -108,7 +108,7 @@ font-size:16px tamaño de la letra de 16px*/
     li:hover a {
         background: #f3e28d;
     }
-    /* Es un condicional, es para cuando estoy en desktop si el ancho es mayor o igual 768px, las siguientes instrucciones se ejecutan, esto lo hicimos porque teniamos planeado hacerla responsive */
+    /* @media es un condicional, es para cuando estoy en desktop si el ancho es mayor o igual 768px, las siguientes instrucciones se ejecutan, esto lo hicimos para que de cierta forma al disminuir el tamaño de la pantalla se pudiera ver responsive */
     
     @media screen and (min-width: 768px) {
         .logo {
