@@ -76,14 +76,15 @@ margin-left: 20px se utilizan para que se cree un margen (espacio alrededor de l
   top: 100px;
   background: rgba(255, 248, 187, 0.74);
   text-align: center;
-  transition: all .5s;
+  transition: all 5s; 
+  /*  animacion de cuando despliega */
 }
 
 .nav-menu li {
   display: none;
   line-height: 30px;
   margin: 50px 0;
-  transition: all .5s;
+  transition: all 5s;
 }
 
 .nav-menu li a {
@@ -96,15 +97,18 @@ margin-left: 20px se utilizan para que se cree un margen (espacio alrededor de l
 #check{
   display: none;
 }
-
+/* pseudo clase:checked, propia de los input tipo radio o checkbox, va a ser utilizada por todos los hermanos de la clase nav-menu, cuando se seleccione el input  */
 #check:checked ~ .nav-menu {
   height: 100vh;
 }
 
+/* pseudo clase:checked, propia de los input tipo radio o checkbox, va a ser utilizada por todos los hermanos de la clase nav-menu, cuando se seleccione el input 
+display: block para que vaya uno debajo del otro*/
 #check:checked ~ .nav-menu li{
   display: block;
 }
 
+/* condicional, es para cuando estoy en desktop si el ancho es mayor o igual 768px, las siguientes instrucciones se ejecutan */
 @media screen and (min-width: 768px){
 
   .logo{
@@ -152,6 +156,8 @@ h1, p{
   margin: 30px auto;
 }
 
+/* animacion por fotogramas, 0 es el estado inicial, 50 intermedio, 100 final
+instruccion box-shadow: x, y, difuminacion, borde, color */
 @keyframes table-animation {
   0% { box-shadow: 0 0 0px 0 red; }
   50% { box-shadow: 0 0 40px 0 green; }
