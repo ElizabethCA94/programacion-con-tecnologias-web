@@ -251,11 +251,11 @@ form{
   background: rgba(255, 255, 255, 0.6);
   padding: 10px 20px;
   box-sizing: border-box;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 h2{
-color: rgba(0, 0, 0,);
+color: rgba(0, 0, 0);
 text-align: center;
 margin: 0;
 font-size: 30px;
@@ -277,4 +277,49 @@ font-size: 15px;
 
 }
 
+/*Estilos para el pie de pagina */
+
+footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.9);
+	height: 100px;
+	width: 100wh;
+	font-family: "Fantasy";
+	padding-top: 10px;
+	color: rgba(255, 255, 255);
+	margin-top: 100px;
+}
+
+.footer-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.footer-content p{ 
+	max-width: 500px;
+	margin: 2px;
+}
+
+.socials{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 3rem 0;
+	padding-top: none;
+}
+
+.socials li{
+	margin: 0 10px;
+}
+
+.socials a{
+	text-decoration: none;
+	color: #ff8000;
+}
 
