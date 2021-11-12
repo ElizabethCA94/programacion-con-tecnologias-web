@@ -1,3 +1,5 @@
+Taller 2 - HTML y CSS
+
 INTEGRANTES: Maria Camila Martinez, Daniel Santiago Gaviria, Elizabeth Carreño Alvarez
 
 Se crea la rama secuendaria Develop donde pueden verse los commit de los integrantes.
