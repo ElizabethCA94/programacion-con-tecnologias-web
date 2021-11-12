@@ -1,7 +1,10 @@
     /* Se importa de la api de google para colocar fuente sin decoracion en las letras */
     
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
-    /* A todos los elementos del HTML se le van a aplicar las siguientes propiedades:
+
+/* Estilos para el index */
+
+/* A todos los elementos del HTML se le van a aplicar las siguientes propiedades:
 padding: 0 sirve para que no se cree un relleno (espacio alrededor del contenido de un elemento), dentro de los bordes definidos.
 margin: 0 se utilizan para que no se cree un margen (espacio alrededor de los elementos), fuera de los bordes definidos.
 text-decoration: none facilita que se le quite la decoracion que trae el texto por defecto, debido a que son enlaces
@@ -10,42 +13,44 @@ box-sizing: border-box le dice al navegador tomar en cuenta para cualquier valor
 
 */
     
-    * {
-        padding: 0;
-        margin: 0;
-        text-decoration: none;
-        list-style: none;
-        box-sizing: border-box;
-    }
-    /* Todos los elementos dentro de la etiqueta body van a tener:
-    font-family: "Montserrat", tipo de fuente
-    background-image: url(../img/fondo.jpg), imagen de fondo predeterminada */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+/* Todos los elementos dentro de la etiqueta body van a tener:
+font-family: "Montserrat", tipo de fuente
+background-image: url(../img/fondo.jpg), imagen de fondo predeterminada */
     
-    body {
-        font-family: "Montserrat";
-        background-image: url(../img/fondo.jpg);
-    }
-    /*clase history se aplican las siguientes propiedades: font-family: "Montserrat", tipo de fuente
-    background-image: url(../img/fondo.jpg), imagen de fondo predeterminada 
-    width: 100% ancho 
-    height: 20px alto*/
+body {
+    font-family: "Montserrat";
+    background-image: url(../img/fondo.jpg);
+}
+
+/*clase history se aplican las siguientes propiedades: font-family: "Montserrat", tipo de fuente
+background-image: url(../img/fondo.jpg), imagen de fondo predeterminada 
+width: 100% ancho 
+height: 20px alto*/
     
-    .history {
-        font-family: "Montserrat";
-        background-image: url(../img/integrantes.jpeg);
-        width: 100%;
-        height: 20px;
-    }
-    /* A la etiqueta header se le van a aplicar las siguientes propiedades:
+.history {
+    font-family: "Montserrat";
+    background-image: url(../img/integrantes.jpeg);
+    width: 100%;
+    height: 20px;
+}
+
+/* A la etiqueta header se le van a aplicar las siguientes propiedades:
 width: 100% es el ancho del elemento que ocupe el 100% de la pagina
 height: 100vh, es el alto del elemento, lo usamos en este caso porque queremos que la imagen de fondo ocupe todo el alto de la pantalla. 
 background-image: url(fondo.jpg); se define como el fondo en imagen de la pagina, la cual por defecto trae un background-repeat
 */
     
-    header {
-        width: 100%;
-    }
-    /*A la etiqueta nav se le van a aplicar las siguientes propiedades:
+header {
+    width: 100%;
+}
+/*A la etiqueta nav se le van a aplicar las siguientes propiedades:
 height: 100px, alto de la etiqueta, lo usamos en este caso para que la barra de mavegacion ocupe 100px de la pagina web 
 width: 100% ancho del contenido que ocupe el 100% de la pagina
 display: flex permite que el comportamiento de visualizacion del elemento sea flexible,en donde se puedan alterar sus dimensiones y llenar espacios disponibles
@@ -55,87 +60,96 @@ background: rgba(255, 248, 187, 0.74) define el color fondo de la barra de naveg
 padding: 10px sirve para que se cree un relleno (espacio alrededor del contenido de un elemento), dentro de los bordes definidos
 */
     
-    nav {
-        height: 100px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: rgba(255, 248, 187, 0.74);
-        padding: 10px;
-    }
-    /* A la clase logo le colocamos:
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 248, 187, 0.74);
+    padding: 10px;
+}
+
+/* A la clase logo le colocamos:
 width: 140px ancho del contenido que ocupe el 140px de la pagina 
 margin-left: 80px se utilizan para que se cree un margen al lado izquierdo (espacio alrededor de los elementos), fuera de los bordes definidos.
 */
     
-    .logo {
-        width: 140px;
-        margin-left: 80px;
-    }
-    /*Para la clase nav-menu, incluimos:
-position: fixed, especifica como un elemento es posicionado en el documento, es posicionado con relación al contenedor en este caso es nav
+.logo {
+    width: 140px;
+    margin-left: 80px;
+}
+/*Para la clase nav-menu, incluimos:
+position: fixed, especifica como un elemento es posicionado en el documento, es posicionado con relación al contenedor, en este caso es nav
 width: 100% ancho del contenido que ocupe el 100% de la pagina
 background: rgba(255, 248, 187, 0.74) define el color fondo de la barra de navegacion, en rgba, la cual, incluye la opacidad del color 
 text-align: center, permite aliar el texto en el centro de su box model
 */
     
-    .nav-menu {
-        position: fixed;
-        width: 100%;
-        background: rgba(255, 248, 187, 0.74);
-        text-align: center;
-    }
-    /*A todos los li que  esten dentro de la clase nav-menu, se les va a aplicar:
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    background: rgba(255, 248, 187, 0.74);
+    text-align: center;
+}
+
+/*A todos los li que  esten dentro de la clase nav-menu, se les va a aplicar:
 display: none, no se aplica ningun tipo de forma para mostrar el texto, sino por defecto
 margin: 50px(arriba y abajo) y 0(izquierda y derecha)se utilizan para que no se cree un margen (espacio alrededor de los elementos), fuera de los bordes definidos.
 */
     
-    .nav-menu li {
-        display: none;
-        margin: 50px 0;
-    }
-    /*A todos los a (hipervinculos) que esten dentro de los li que  esten dentro de la clase nav-menu, se les va a aplicar:
+.nav-menu li {
+    display: none;
+    margin: 50px 0;
+}
+
+/*A todos los a (hipervinculos) que esten dentro de los li que  esten dentro de la clase nav-menu, se les va a aplicar:
 color: negro, color de la fuente de los hipervinculos
 font-size:16px tamaño de la letra de 16px*/
     
+.nav-menu li a {
+    color: black;
+    font-size: 16px;
+}
+/*Se aplica a los hipervinculos de los li el cambio de estado hover*/
+li:hover a {
+    background: #f3e28d;
+}
+
+/*Se aplica a los hipervinculos de los li el cambio de estado hover*/
+a:hover {
+    background: #f3e28d;
+}
+
+/* @media es un condicional, es para cuando estoy en desktop si el ancho es mayor o igual 768px, las siguientes instrucciones se ejecutan, esto lo hicimos para que de cierta forma al disminuir el tamaño de la pantalla se pudiera ver responsive */
+    
+@media screen and (min-width: 768px) {
+    .logo {
+        margin-left: 80px;
+    }
+    nav {
+        height: 100px;
+    }
+    .nav-menu {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+    .nav-menu li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+    }
     .nav-menu li a {
-        color: black;
-        font-size: 16px;
+        font-size: 20px;
     }
-    /*Se aplica a los hipervinculos de los li el cambio de estado hover*/
-    
-    li:hover a {
-        background: #f3e28d;
-    }
-    /* @media es un condicional, es para cuando estoy en desktop si el ancho es mayor o igual 768px, las siguientes instrucciones se ejecutan, esto lo hicimos para que de cierta forma al disminuir el tamaño de la pantalla se pudiera ver responsive */
-    
-    @media screen and (min-width: 768px) {
-        .logo {
-            margin-left: 80px;
-        }
-        nav {
-            height: 100px;
-        }
-        .nav-menu {
-            position: relative;
-            height: 100px;
-            top: 0;
-            background: none;
-            transition: none;
-            text-align: right;
-            margin-right: 50px;
-        }
-        .nav-menu li {
-            display: inline-block;
-            line-height: 100px;
-            margin: 0 20px;
-        }
-        .nav-menu li a {
-            font-size: 20px;
-        }
-    }
-    /*A la clase .main-content se le asigna:
+}
+
+/*A la clase .main-content se le asigna, que es un articule
 padding: 60px sirve para que se cree un relleno (espacio alrededor del contenido de un elemento), dentro de los bordes definidos
 background: rgba(255, 255, 255, 0.74) define el color fondo de la barra de navegacion, en rgba, la cual, incluye la opacidad del color 
 max-width: 600px un ancho maximo de 600px
@@ -143,35 +157,34 @@ margin: 60px(arriba y abajo) y auto(izquierda y derecha) valor por defecto, es p
 
 */
     
-    .main-content {
+.main-content {
         padding: 60px;
         background-color: rgba(255, 255, 255, 0.74);
-        max-width: 600px;
+        max-width: 700px;
         margin: 60px auto;
-    }
-    /*Para los parrafos y h1:
+}
+/*Para los parrafos y h1:
 margin: 30px(arriba y abajo) y auto(izquierda y derecha) valor por defecto,
 es para crear un margen (espacio alrededor de los elementos),fuera de los bordes definidos*/
     
-    h1,
-    p {
-        margin: 30px auto;
-    }
-    /*keyframes es animacion por fotogramas, 0 es el estado inicial, 50 intermedio, 100 final
+h1, p {
+    margin: 30px auto;
+}
+/*keyframes es animacion por fotogramas, 0 es el estado inicial, 50 intermedio, 100 final
 instruccion box-shadow: x, y, difuminacion, borde, color */
     
-    @keyframes table-animation {
-        0% {
-            box-shadow: 0 0 0px 0 red;
-        }
-        50% {
-            box-shadow: 0 0 40px 0 green;
-        }
-        100% {
-            box-shadow: 0 0 0px 0 blue;
-        }
+@keyframes table-animation {
+    0% {
+        box-shadow: 0 0 0px 0 red;
     }
-    /*Para la clase de la tabla songs-table se define:
+    50% {
+        box-shadow: 0 0 40px 0 green;
+    }
+    100% {
+        box-shadow: 0 0 0px 0 blue;
+    }
+}
+/*Para la clase de la tabla songs-table se define:
 margin: 30px, margen hacia arriba, (espacio alrededor de los elementos),fuera de los bordes definidos
 background-color: white, define el color de la tabla
 border-color: black, se define el color del borde de la tabla
@@ -181,63 +194,63 @@ animation: table-animation 1s infinite; permite crear animacion de la tabla de f
 width:100% ancho del contenido que ocupe el 100% de la pagina
 */
     
-    .songs-table {
-        margin-top: 60px;
-        background-color: white;
-        border-color: black;
-        border: 1px solid;
-        border-collapse: collapse;
-        animation: table-animation 1s infinite;
-        width: 100%;
-    }
-    /*Para los td y los th de la clase .songs-table, se define 
+.songs-table {
+    margin-top: 60px;
+    background-color: white;
+    border-color: black;
+    border: 1px solid;
+    border-collapse: collapse;
+    animation: table-animation 1s infinite;
+    width: 100%;
+}
+
+/*Para los td y los th de la clase .songs-table, se define 
 border: 1px solid, permite definir el grosor del borde
 padding: 8px sirve para que se cree un relleno (espacio alrededor del contenido de un elemento), dentro de los bordes definidos
 
 */
     
-    .songs-table td,
-    .songs-table th {
-        border: 1px solid;
-        padding: 8px;
-    }
-    /*margin: 40px(arriba y abajo) y 35px(izquierda y derecha) valor por defecto*/
+.songs-table td,
+.songs-table th {
+border: 1px solid;
+    padding: 8px;
+}
+/*margin: 40px(arriba y abajo) y 35px(izquierda y derecha) valor por defecto*/
     
-    iframe {
-        margin: 40px 35px;
-    }
+iframe {
+    margin: 30px auto;
+}
 
-    /*Lo siguiente es para la pagina de historia*/
-    /*Le puse una animación al titulo, le cambie la imagen de fondo y cambie el background*/
+/*Lo siguiente es para la pagina de historia*/
+/*Le puse una animación al titulo, le cambie la imagen de fondo y cambie el background*/
 #historia{
     color: aliceblue;
     font-size: 110 px;
     font-family: "Montserrat", "sans-serif";
-  }
-  #title{
+}
+#title{
     font-family: "Montserrat", "sans-serif";
     animation-name: titulo;
     animation-duration: 10s;
     animation-delay: 2s;
-  }
-  @keyframes titulo{
+}
+@keyframes titulo{
     0%{color:brown}
     25%{color:bisque}
     50%{color: aliceblue}
     75%{color: silver}
     100%{color: black}
-  }
-  
-  #pagHistoria{
+}
+#pagHistoria{
     width: 100%;
     height: 300vh;
     background-image: url(../img/Integrantes.JPG);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-  }
+}
 
-  #history-content{
+#history-content{
     padding: 60px;
     background-color: rgba(189, 185, 185, 0.301);
     max-width: 400px;
@@ -245,13 +258,13 @@ padding: 8px sirve para que se cree un relleno (espacio alrededor del contenido 
 }
 
 /*Estilos para la hoja de contacto */
-form{
-  width: 550px;
-  margin: auto;
-  background: rgba(255, 255, 255, 0.6);
-  padding: 10px 20px;
-  box-sizing: border-box;
-  margin-top: 30px;
+form {
+    width: 550px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 30px;
 }
 
 h2{
@@ -294,16 +307,19 @@ footer{
 }
 
 .footer-content{
-	display: flex;
+	display: inline;
 	align-items: center;
 	justify-content: center;
-	flex-direction: column;
+	flex-direction: none;
 	text-align: center;
 }
 
 .footer-content p{ 
-	max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 	margin: 2px;
+    text-align: center;
 }
 
 .socials{
